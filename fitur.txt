@@ -1,0 +1,18 @@
+Modul Kelas :
+
+fiield : nim, nama, kelas, tahun ajaran, pembayaran(belum lunas/lunas). 
+pencarian : data perkelas beserta siswa/i dan ada keterangan sudah lunas atau belum untuk satu tahun pembayaran.
+
+
+
+Modul Pembayaran :
+
+field : nim, nama, kelas, jenis pembayaran (SPP, komputer, Osis, DSP)
+Pencarian : histori pembayaran siswa berdasarkan nim/nama dari kelas X - XII
+
+
+Modul Laporan :
+
+1. data siswa
+2. data kelas tanpa pembayaran
+3. data rekapan pembayaran perbulan, semester, pertahun

@@ -60,11 +60,19 @@ Route::post('/sesi/gantipassword', [SessionController::class, 'kirimResetPasswor
 Route::get('/sesi/resetpassword/{token}', [SessionController::class, 'formResetPassword'])->middleware('isTamu')->name('password.reset');
 Route::post('/sesi/resetpassword', [SessionController::class, 'resetPassword'])->middleware('isTamu')->name('password.update');
 
-Route::get('/report', [ReportController::class, 'index']);
+Route::get('/report', [ReportController::class, 'siswa']);
 Route::get('/report/export', [ReportController::class, 'export'])->name('report.export');
 
 Route::get('/users/export', [UserExcelController::class, 'export'])->name('users.export');
 Route::get('/users/reportsiswa', [ReportController::class, 'export'])->name('users.reportsiswa'); 
+
+Route::get('/laporan/kelas', [ReportController::class, 'kelas']);
+Route::get('/laporan/kelas/export', [ReportController::class, 'exportkelas'])->name('laporan.kelas.export');
+
+
+Route::get('/laporan/pembayaran', []);
+
+
 
 
 Route::get('/layout', function () {

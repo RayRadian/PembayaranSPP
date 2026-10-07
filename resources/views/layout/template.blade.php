@@ -127,13 +127,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/report/kelas" class="nav-link">
+                    <a href="/laporan/kelas" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>Kelas</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/report/pembayaran-bulanan" class="nav-link">
+                    <a href="/laporan/pembayaran" class="nav-link">
                         <i class="nav-icon fas fa-calendar-alt"></i>
                         <p>Pembayaran</p>
                     </a>

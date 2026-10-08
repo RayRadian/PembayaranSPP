@@ -7,6 +7,7 @@
     </div>
   </td>
 </tr> -->
+<h3>Data Siswa</h3><br>
 <a href="{{ route('report.export') }}" 
    onclick="showLoading()"
    class="btn btn-success">

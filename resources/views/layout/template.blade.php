@@ -30,6 +30,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     padding-left: 40px !important;
    }
    
+   .nav-treeview .nav-treeview .nav-link {
+    padding-left: 60px !important;
+   }
    </style>
 
 </head>
@@ -132,14 +135,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <p>Kelas</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="/laporan/pembayaran" class="nav-link">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-calendar-alt"></i>
                         <p>Pembayaran</p>
                     </a>
-                </li>
-            </ul>
-        </li>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="laporan/pembayaran/harian" class="nav-link">
+                          <i class="far fa-check-circle nav-icon"></i>
+                          <p>Harian</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="laporan/pembayaran/bulanan" class="nav-link">
+                          <i class="far fa-check-circle nav-icon"></i>
+                          <p>Bulanan</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="laporan/pembayaran/kelas" class="nav-link">
+                          <i class="far fa-check-circle nav-icon"></i>
+                          <p>Kelas</p>
+                        </a>
+                      </li>
+                 </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

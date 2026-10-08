@@ -4,7 +4,8 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\SessionController;
-use App\Http\Controllers\ReportController; 
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\LaporanPembayaranController; 
 use App\Http\Controllers\HalamanController;
 use Illuminate\Support\Facades\Route;
 
@@ -68,9 +69,8 @@ Route::get('/users/reportsiswa', [ReportController::class, 'export'])->name('use
 
 Route::get('/laporan/kelas', [ReportController::class, 'kelas']);
 Route::get('/laporan/kelas/export', [ReportController::class, 'exportkelas'])->name('laporan.kelas.export');
+Route::get('/laporan/pembayaran/harian', [LaporanPembayaranController::class, 'hari']);
 
-
-Route::get('/laporan/pembayaran', []);
 
 
 

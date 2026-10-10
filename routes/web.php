@@ -70,7 +70,7 @@ Route::get('/users/reportsiswa', [ReportController::class, 'export'])->name('use
 Route::get('/laporan/kelas', [ReportController::class, 'kelas']);
 Route::get('/laporan/kelas/export', [ReportController::class, 'exportkelas'])->name('laporan.kelas.export');
 Route::get('/laporan/pembayaran/harian', [LaporanPembayaranController::class, 'hari']);
-
+Route::get('/laporan/pembayaran/laporan-harian',[LaporanPembayaranController::class, 'LaporanHarian'])->name('laporan.pembayaran.laporan-harian');
 
 
 
